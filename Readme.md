@@ -47,6 +47,8 @@ Both the second and third render passes are executed within the main display loo
 
 
 
+
+
 Demo 2: Convert an EquiRectangular map to six 2D cubic maps.
 
 The fragment function in this demo is a port of an OpenGL fragment shader published by LearnOpenGL.com.
@@ -118,6 +120,8 @@ Note: the CIImage function
 	writeHEIFRepresentation(of:, to:, format:, colourSpace:, options)
 
 requires macOS 13.4 or the program will crash.
+
+
 
 
 
