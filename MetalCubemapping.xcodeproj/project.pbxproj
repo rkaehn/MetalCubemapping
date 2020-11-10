@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE02FD1724F76EE9005A662D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02FD1624F76EE9005A662D /* AppDelegate.swift */; };
+		EE02FD1924F76EE9005A662D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02FD1824F76EE9005A662D /* ViewController.swift */; };
+		EE02FD1B24F76EEA005A662D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE02FD1A24F76EEA005A662D /* Assets.xcassets */; };
+		EE02FD1E24F76EEA005A662D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE02FD1C24F76EEA005A662D /* Main.storyboard */; };
+		EE02FD2724F76F7B005A662D /* CubemapRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE02FD2624F76F7B005A662D /* CubemapRenderer.swift */; };
+		EE0C3A0F254B923900E5BB96 /* newport_loft.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE0C3A0D254B923900E5BB96 /* newport_loft.hdr */; };
+		EE101CF7254EB25700EFE4C5 /* LoadTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E6BB2535ABEB0045EA87 /* LoadTextures.swift */; };
+		EE1362CC25529B7E00E4F292 /* image03.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE1362C625529B7E00E4F292 /* image03.hdr */; };
+		EE1362CD25529B7E00E4F292 /* image01.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE1362C725529B7E00E4F292 /* image01.hdr */; };
+		EE1362CE25529B7E00E4F292 /* image04.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE1362C825529B7E00E4F292 /* image04.hdr */; };
+		EE1362CF25529B7E00E4F292 /* image00.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE1362C925529B7E00E4F292 /* image00.hdr */; };
+		EE1362D025529B7E00E4F292 /* image05.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE1362CA25529B7E00E4F292 /* image05.hdr */; };
+		EE1362D125529B7E00E4F292 /* image02.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE1362CB25529B7E00E4F292 /* image02.hdr */; };
+		EE19E6BC2535ABEB0045EA87 /* LoadTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E6BB2535ABEB0045EA87 /* LoadTextures.swift */; };
+		EE2B1FF6253B19F10021D1B9 /* CubeMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2B1FF5253B19F10021D1B9 /* CubeMesh.swift */; };
+		EE36D84D2558A24B00CA1B8F /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3F025330F650033B5BB /* Mesh.swift */; };
+		EE36D84E2558A24F00CA1B8F /* TorusMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3F125330F650033B5BB /* TorusMesh.swift */; };
+		EE36D84F2558A29B00CA1B8F /* BoxMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3EF25330F650033B5BB /* BoxMesh.swift */; };
+		EE3CD3DE25330DB70033B5BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3DD25330DB70033B5BB /* AppDelegate.swift */; };
+		EE3CD3E025330DB70033B5BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3DF25330DB70033B5BB /* ViewController.swift */; };
+		EE3CD3E225330DB80033B5BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3CD3E125330DB80033B5BB /* Assets.xcassets */; };
+		EE3CD3E525330DB80033B5BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CD3E325330DB80033B5BB /* Main.storyboard */; };
+		EE3CD3EE25330EB00033B5BB /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3ED25330EB00033B5BB /* Shaders.metal */; };
+		EE3CD3F325330F650033B5BB /* BoxMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3EF25330F650033B5BB /* BoxMesh.swift */; };
+		EE3CD3F425330F650033B5BB /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3F025330F650033B5BB /* Mesh.swift */; };
+		EE3CD3F525330F650033B5BB /* TorusMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3F125330F650033B5BB /* TorusMesh.swift */; };
+		EE3CD3F625330F650033B5BB /* EquiRectRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CD3F225330F650033B5BB /* EquiRectRenderer.swift */; };
+		EE544D692533396000B00C7E /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE544D682533396000B00C7E /* AAPLMathUtilities.m */; };
+		EE544D6A2533396000B00C7E /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE544D682533396000B00C7E /* AAPLMathUtilities.m */; };
+		EE61B7F924F7B298009338D9 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EE61B7F824F7B298009338D9 /* Shaders.metal */; };
+		EE9359ED253880E300C5E447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9359EC253880E300C5E447 /* AppDelegate.swift */; };
+		EE9359EF253880E300C5E447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9359EE253880E300C5E447 /* ViewController.swift */; };
+		EE9359F1253880E500C5E447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9359F0253880E500C5E447 /* Assets.xcassets */; };
+		EE9359F4253880E500C5E447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9359F2253880E500C5E447 /* Main.storyboard */; };
+		EE9359FB2538823900C5E447 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9359FA2538823900C5E447 /* Renderer.swift */; };
+		EE9359FC2538838200C5E447 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE544D682533396000B00C7E /* AAPLMathUtilities.m */; };
+		EE9359FE253885EB00C5E447 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EE9359FD253885EB00C5E447 /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE02FD1324F76EE9005A662D /* Cubemapping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cubemapping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE02FD1624F76EE9005A662D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE02FD1824F76EE9005A662D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE02FD1A24F76EEA005A662D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE02FD1D24F76EEA005A662D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE02FD1F24F76EEA005A662D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE02FD2024F76EEA005A662D /* Cubemapping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cubemapping.entitlements; sourceTree = "<group>"; };
+		EE02FD2624F76F7B005A662D /* CubemapRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubemapRenderer.swift; sourceTree = "<group>"; };
+		EE0C3A0D254B923900E5BB96 /* newport_loft.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = newport_loft.hdr; sourceTree = "<group>"; };
+		EE1362C625529B7E00E4F292 /* image03.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = image03.hdr; sourceTree = "<group>"; };
+		EE1362C725529B7E00E4F292 /* image01.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = image01.hdr; sourceTree = "<group>"; };
+		EE1362C825529B7E00E4F292 /* image04.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = image04.hdr; sourceTree = "<group>"; };
+		EE1362C925529B7E00E4F292 /* image00.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = image00.hdr; sourceTree = "<group>"; };
+		EE1362CA25529B7E00E4F292 /* image05.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = image05.hdr; sourceTree = "<group>"; };
+		EE1362CB25529B7E00E4F292 /* image02.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = image02.hdr; sourceTree = "<group>"; };
+		EE19E6BB2535ABEB0045EA87 /* LoadTextures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadTextures.swift; sourceTree = "<group>"; };
+		EE2B1FF5253B19F10021D1B9 /* CubeMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CubeMesh.swift; sourceTree = "<group>"; };
+		EE3CD3DB25330DB70033B5BB /* EquiRect2CubemapRH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EquiRect2CubemapRH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3CD3DD25330DB70033B5BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE3CD3DF25330DB70033B5BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE3CD3E125330DB80033B5BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE3CD3E425330DB80033B5BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE3CD3E625330DB80033B5BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE3CD3E725330DB80033B5BB /* EquiRect2Cubemap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EquiRect2Cubemap.entitlements; sourceTree = "<group>"; };
+		EE3CD3ED25330EB00033B5BB /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		EE3CD3EF25330F650033B5BB /* BoxMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxMesh.swift; sourceTree = "<group>"; };
+		EE3CD3F025330F650033B5BB /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		EE3CD3F125330F650033B5BB /* TorusMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorusMesh.swift; sourceTree = "<group>"; };
+		EE3CD3F225330F650033B5BB /* EquiRectRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquiRectRenderer.swift; sourceTree = "<group>"; };
+		EE544D672533396000B00C7E /* AAPLMathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
+		EE544D682533396000B00C7E /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
+		EE61B7F424F7B0FA009338D9 /* Cubemapping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cubemapping-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE61B7F824F7B298009338D9 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		EE6C555B2533BA7500853173 /* EquiRect2Cubemap-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EquiRect2Cubemap-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE9359EA253880E300C5E447 /* Cubemap2EquiRect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cubemap2EquiRect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9359EC253880E300C5E447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE9359EE253880E300C5E447 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE9359F0253880E500C5E447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9359F3253880E500C5E447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE9359F5253880E500C5E447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9359F6253880E500C5E447 /* Cubemap2EquiRect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cubemap2EquiRect.entitlements; sourceTree = "<group>"; };
+		EE9359FA2538823900C5E447 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		EE9359FD253885EB00C5E447 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE02FD1024F76EE9005A662D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3CD3D825330DB70033B5BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9359E7253880E300C5E447 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE02FD0A24F76EE9005A662D = {
+			isa = PBXGroup;
+			children = (
+				EE0C3A0B254B91D600E5BB96 /* Images */,
+				EE544D652533393E00B00C7E /* Common */,
+				EE02FD1524F76EE9005A662D /* Cubemapping */,
+				EE3CD3DC25330DB70033B5BB /* EquiRect2CubemapRH */,
+				EE9359EB253880E300C5E447 /* Cubemap2EquiRect */,
+				EE02FD1424F76EE9005A662D /* Products */,
+				EE5EE175251C4D2500C24531 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE02FD1424F76EE9005A662D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE02FD1324F76EE9005A662D /* Cubemapping.app */,
+				EE3CD3DB25330DB70033B5BB /* EquiRect2CubemapRH.app */,
+				EE9359EA253880E300C5E447 /* Cubemap2EquiRect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE02FD1524F76EE9005A662D /* Cubemapping */ = {
+			isa = PBXGroup;
+			children = (
+				EE02FD1624F76EE9005A662D /* AppDelegate.swift */,
+				EE02FD2624F76F7B005A662D /* CubemapRenderer.swift */,
+				EE02FD1824F76EE9005A662D /* ViewController.swift */,
+				EE61B7F824F7B298009338D9 /* Shaders.metal */,
+				EE02FD1A24F76EEA005A662D /* Assets.xcassets */,
+				EE02FD1C24F76EEA005A662D /* Main.storyboard */,
+				EE02FD1F24F76EEA005A662D /* Info.plist */,
+				EE02FD2024F76EEA005A662D /* Cubemapping.entitlements */,
+				EE61B7F424F7B0FA009338D9 /* Cubemapping-Bridging-Header.h */,
+			);
+			path = Cubemapping;
+			sourceTree = "<group>";
+		};
+		EE0C3A0B254B91D600E5BB96 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE1362C925529B7E00E4F292 /* image00.hdr */,
+				EE1362C725529B7E00E4F292 /* image01.hdr */,
+				EE1362CB25529B7E00E4F292 /* image02.hdr */,
+				EE1362C625529B7E00E4F292 /* image03.hdr */,
+				EE1362C825529B7E00E4F292 /* image04.hdr */,
+				EE1362CA25529B7E00E4F292 /* image05.hdr */,
+				EE0C3A0D254B923900E5BB96 /* newport_loft.hdr */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EE3CD3DC25330DB70033B5BB /* EquiRect2CubemapRH */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CD3DD25330DB70033B5BB /* AppDelegate.swift */,
+				EE3CD3F225330F650033B5BB /* EquiRectRenderer.swift */,
+				EE3CD3DF25330DB70033B5BB /* ViewController.swift */,
+				EE3CD3ED25330EB00033B5BB /* Shaders.metal */,
+				EE3CD3E125330DB80033B5BB /* Assets.xcassets */,
+				EE3CD3E325330DB80033B5BB /* Main.storyboard */,
+				EE3CD3E625330DB80033B5BB /* Info.plist */,
+				EE3CD3E725330DB80033B5BB /* EquiRect2Cubemap.entitlements */,
+				EE6C555B2533BA7500853173 /* EquiRect2Cubemap-Bridging-Header.h */,
+			);
+			path = EquiRect2CubemapRH;
+			sourceTree = "<group>";
+		};
+		EE544D652533393E00B00C7E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EE19E6BB2535ABEB0045EA87 /* LoadTextures.swift */,
+				EE3CD3EF25330F650033B5BB /* BoxMesh.swift */,
+				EE2B1FF5253B19F10021D1B9 /* CubeMesh.swift */,
+				EE3CD3F025330F650033B5BB /* Mesh.swift */,
+				EE3CD3F125330F650033B5BB /* TorusMesh.swift */,
+				EE544D672533396000B00C7E /* AAPLMathUtilities.h */,
+				EE544D682533396000B00C7E /* AAPLMathUtilities.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EE5EE175251C4D2500C24531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9359EB253880E300C5E447 /* Cubemap2EquiRect */ = {
+			isa = PBXGroup;
+			children = (
+				EE9359EC253880E300C5E447 /* AppDelegate.swift */,
+				EE9359FA2538823900C5E447 /* Renderer.swift */,
+				EE9359FD253885EB00C5E447 /* Shaders.metal */,
+				EE9359EE253880E300C5E447 /* ViewController.swift */,
+				EE9359F0253880E500C5E447 /* Assets.xcassets */,
+				EE9359F2253880E500C5E447 /* Main.storyboard */,
+				EE9359F5253880E500C5E447 /* Info.plist */,
+				EE9359F6253880E500C5E447 /* Cubemap2EquiRect.entitlements */,
+			);
+			path = Cubemap2EquiRect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE02FD1224F76EE9005A662D /* Cubemapping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE02FD2324F76EEA005A662D /* Build configuration list for PBXNativeTarget "Cubemapping" */;
+			buildPhases = (
+				EE02FD0F24F76EE9005A662D /* Sources */,
+				EE02FD1024F76EE9005A662D /* Frameworks */,
+				EE02FD1124F76EE9005A662D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cubemapping;
+			productName = MetalCubemapping;
+			productReference = EE02FD1324F76EE9005A662D /* Cubemapping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE3CD3DA25330DB70033B5BB /* EquiRect2CubemapRH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3CD3EA25330DB80033B5BB /* Build configuration list for PBXNativeTarget "EquiRect2CubemapRH" */;
+			buildPhases = (
+				EE3CD3D725330DB70033B5BB /* Sources */,
+				EE3CD3D825330DB70033B5BB /* Frameworks */,
+				EE3CD3D925330DB70033B5BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EquiRect2CubemapRH;
+			productName = EquiRect2Cubemap;
+			productReference = EE3CD3DB25330DB70033B5BB /* EquiRect2CubemapRH.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE9359E9253880E300C5E447 /* Cubemap2EquiRect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9359F9253880E500C5E447 /* Build configuration list for PBXNativeTarget "Cubemap2EquiRect" */;
+			buildPhases = (
+				EE9359E6253880E300C5E447 /* Sources */,
+				EE9359E7253880E300C5E447 /* Frameworks */,
+				EE9359E8253880E300C5E447 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cubemap2EquiRect;
+			productName = Cubemap2EquiRect;
+			productReference = EE9359EA253880E300C5E447 /* Cubemap2EquiRect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE02FD0B24F76EE9005A662D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Mark Lim Pak Mun";
+				TargetAttributes = {
+					EE02FD1224F76EE9005A662D = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
+					};
+					EE3CD3DA25330DB70033B5BB = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					EE9359E9253880E300C5E447 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EE02FD0E24F76EE9005A662D /* Build configuration list for PBXProject "MetalCubemapping" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE02FD0A24F76EE9005A662D;
+			productRefGroup = EE02FD1424F76EE9005A662D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE02FD1224F76EE9005A662D /* Cubemapping */,
+				EE3CD3DA25330DB70033B5BB /* EquiRect2CubemapRH */,
+				EE9359E9253880E300C5E447 /* Cubemap2EquiRect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE02FD1124F76EE9005A662D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE02FD1B24F76EEA005A662D /* Assets.xcassets in Resources */,
+				EE02FD1E24F76EEA005A662D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3CD3D925330DB70033B5BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3CD3E225330DB80033B5BB /* Assets.xcassets in Resources */,
+				EE3CD3E525330DB80033B5BB /* Main.storyboard in Resources */,
+				EE0C3A0F254B923900E5BB96 /* newport_loft.hdr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9359E8253880E300C5E447 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9359F1253880E500C5E447 /* Assets.xcassets in Resources */,
+				EE1362D025529B7E00E4F292 /* image05.hdr in Resources */,
+				EE9359F4253880E500C5E447 /* Main.storyboard in Resources */,
+				EE1362CF25529B7E00E4F292 /* image00.hdr in Resources */,
+				EE1362D125529B7E00E4F292 /* image02.hdr in Resources */,
+				EE1362CE25529B7E00E4F292 /* image04.hdr in Resources */,
+				EE1362CC25529B7E00E4F292 /* image03.hdr in Resources */,
+				EE1362CD25529B7E00E4F292 /* image01.hdr in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE02FD0F24F76EE9005A662D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE544D692533396000B00C7E /* AAPLMathUtilities.m in Sources */,
+				EE02FD2724F76F7B005A662D /* CubemapRenderer.swift in Sources */,
+				EE02FD1924F76EE9005A662D /* ViewController.swift in Sources */,
+				EE02FD1724F76EE9005A662D /* AppDelegate.swift in Sources */,
+				EE61B7F924F7B298009338D9 /* Shaders.metal in Sources */,
+				EE36D84D2558A24B00CA1B8F /* Mesh.swift in Sources */,
+				EE36D84E2558A24F00CA1B8F /* TorusMesh.swift in Sources */,
+				EE36D84F2558A29B00CA1B8F /* BoxMesh.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3CD3D725330DB70033B5BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE544D6A2533396000B00C7E /* AAPLMathUtilities.m in Sources */,
+				EE3CD3F325330F650033B5BB /* BoxMesh.swift in Sources */,
+				EE3CD3EE25330EB00033B5BB /* Shaders.metal in Sources */,
+				EE3CD3F525330F650033B5BB /* TorusMesh.swift in Sources */,
+				EE19E6BC2535ABEB0045EA87 /* LoadTextures.swift in Sources */,
+				EE3CD3F425330F650033B5BB /* Mesh.swift in Sources */,
+				EE2B1FF6253B19F10021D1B9 /* CubeMesh.swift in Sources */,
+				EE3CD3E025330DB70033B5BB /* ViewController.swift in Sources */,
+				EE3CD3DE25330DB70033B5BB /* AppDelegate.swift in Sources */,
+				EE3CD3F625330F650033B5BB /* EquiRectRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9359E6253880E300C5E447 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE101CF7254EB25700EFE4C5 /* LoadTextures.swift in Sources */,
+				EE9359EF253880E300C5E447 /* ViewController.swift in Sources */,
+				EE9359ED253880E300C5E447 /* AppDelegate.swift in Sources */,
+				EE9359FB2538823900C5E447 /* Renderer.swift in Sources */,
+				EE9359FC2538838200C5E447 /* AAPLMathUtilities.m in Sources */,
+				EE9359FE253885EB00C5E447 /* Shaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE02FD1C24F76EEA005A662D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE02FD1D24F76EEA005A662D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE3CD3E325330DB80033B5BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3CD3E425330DB80033B5BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9359F2253880E500C5E447 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9359F3253880E500C5E447 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE02FD2124F76EEA005A662D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE02FD2224F76EEA005A662D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EE02FD2424F76EEA005A662D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Cubemapping/Cubemapping.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Cubemapping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.MetalCubemapping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cubemapping/Cubemapping-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		EE02FD2524F76EEA005A662D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Cubemapping/Cubemapping.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Cubemapping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.MetalCubemapping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cubemapping/Cubemapping-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		EE3CD3E825330DB80033B5BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EquiRect2CubemapRH/EquiRect2Cubemap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EquiRect2CubemapRH/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.EquiRect2CubemapRH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EquiRect2CubemapRH/EquiRect2Cubemap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EE3CD3E925330DB80033B5BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EquiRect2CubemapRH/EquiRect2Cubemap.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EquiRect2CubemapRH/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.EquiRect2CubemapRH";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EquiRect2CubemapRH/EquiRect2Cubemap-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		EE9359F7253880E500C5E447 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cubemap2EquiRect/Cubemap2EquiRect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Cubemap2EquiRect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.Cubemap2EquiRect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cubemap2EquiRect/Cubemap2EquiRect-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EE9359F8253880E500C5E447 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cubemap2EquiRect/Cubemap2EquiRect.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Cubemap2EquiRect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.Cubemap2EquiRect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cubemap2EquiRect/Cubemap2EquiRect-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE02FD0E24F76EE9005A662D /* Build configuration list for PBXProject "MetalCubemapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE02FD2124F76EEA005A662D /* Debug */,
+				EE02FD2224F76EEA005A662D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE02FD2324F76EEA005A662D /* Build configuration list for PBXNativeTarget "Cubemapping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE02FD2424F76EEA005A662D /* Debug */,
+				EE02FD2524F76EEA005A662D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3CD3EA25330DB80033B5BB /* Build configuration list for PBXNativeTarget "EquiRect2CubemapRH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3CD3E825330DB80033B5BB /* Debug */,
+				EE3CD3E925330DB80033B5BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9359F9253880E500C5E447 /* Build configuration list for PBXNativeTarget "Cubemap2EquiRect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9359F7253880E500C5E447 /* Debug */,
+				EE9359F8253880E500C5E447 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE02FD0B24F76EE9005A662D /* Project object */;
+}
