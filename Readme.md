@@ -148,6 +148,6 @@ https://learnopengl.com/PBR/IBL/Diffuse-irradiance
 
 http://paulbourke.net/panorama/cubemaps/index.html
 
-// https://stackoverflow.com/questions/48872043/how-to-load-16-bit-images-into-metal-textures
+https://stackoverflow.com/questions/48872043/how-to-load-16-bit-images-into-metal-textures
 
-
+https://developer.apple.com/forums/thread/97119
