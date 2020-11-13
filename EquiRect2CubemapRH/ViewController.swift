@@ -45,6 +45,7 @@ class ViewController: NSViewController {
         self.mtkView.window!.makeFirstResponder(self)
     }
 
+    // The file is written out as an 8-bit RGBA despite the fact we request for a 16-bit RGBA HEIC format.
     func writeTexture(_ cubeMapTexture: MTLTexture,
                       with prefixName: String,
                       at directoryURL: URL) {
